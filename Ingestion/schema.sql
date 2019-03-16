@@ -48,41 +48,26 @@ TBLPROPERTIES (
     'serialization.null.format' = '',
     'skip.header.line.count' = '1');
 
+DROP TABLE IF EXISTS msd.yearly_avg_all_age;
 
-CREATE TABLE IF NOT EXISTS msd.raw_orc
+CREATE EXTERNAL TABLE IF NOT EXISTS msd.yearly_avg_all_age
 (
-  YearStart INT,
-  YearEnd INT,
-  LocationAbbr STRING,
-  LocationDesc STRING,
-  Datasource STRING,
-  Class STRING,
-  Topic STRING,
-  Question STRING,
-  Data_Value_Unit STRING,
-  Data_Value_Type STRING,
-  Data_Value FLOAT,
-  Data_Value_Alt FLOAT,
-  Data_Value_Footnote_Symbol STRING,
-  Data_Value_Footnote STRING,
-  Low_Confidence_Limit FLOAT,
-  High_Confidence_Limit  FLOAT,
-  Sample_Size INT,
-  Total STRING,
-  Age STRING,
-  Gender STRING,
-  Race STRING,
-  GeoLocation STRING,
-  ClassID STRING,
-  TopicID STRING,
-  QuestionID STRING,
-  DataValueTypeID STRING,
-  LocationID STRING,
-  StratificationCategory1 STRING,
-  Stratification1 STRING,
-  StratificationCategoryId1 STRING,
-  StratificationID STRING
-) 
-STORED AS ORC;
+  question STRING,
+  year STRING, 
+  age STRING, 
+  avg_value STRING
+)
+STORED AS PARQUET
+LOCATION 'hdfs://sandbox-hdp.hortonworks.com:8020/warehouse/tablespace/managed/hive/msd.db/yearly_avg_all_age';
 
-INSERT INTO TABLE msd.raw_orc SELECT * FROM msd.raw_csv;
+
+DROP TABLE IF EXISTS msd.yearly_avg_female;
+
+CREATE EXTERNAL TABLE IF NOT EXISTS msd.yearly_avg_female
+(
+  question STRING,
+  year STRING, 
+  avg_value STRING
+)
+STORED AS PARQUET
+LOCATION 'hdfs://sandbox-hdp.hortonworks.com:8020/warehouse/tablespace/managed/hive/msd.db/yearly_avg_female';

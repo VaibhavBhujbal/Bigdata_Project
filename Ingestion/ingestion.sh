@@ -10,6 +10,4 @@ rm rows.csv
 
 sudo -u root hdfs dfs -chown -R hive /warehouse/tablespace/managed/hive/msd.db
 
-hive -f schema.sql
-
 echo "Done"
