@@ -11,7 +11,7 @@ Please install docker before you run this script.
    $ cd HDP_3.0.1_docker-deploy-scripts
    $ bash docker-deploy-hdp30.sh
    ```
-2. Restart your computer then start the HDP docker.
+2. Start the HDP docker.
    ```bash
    $ docker start sandbox-hdp
    $ docker start sandbox-proxy
