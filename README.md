@@ -2,6 +2,7 @@
 
 ## Requirements
 This script has been tested on Ubuntu 18.04.
+
 Please install docker before you run this script. 
 
 ## Instructions
