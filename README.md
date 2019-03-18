@@ -43,7 +43,7 @@ Please install docker before you run this script.
    $ hive -f schema.sql
    $ spark-submit --class com.msd.AllAgeApp --master yarn --deploy-mode client AllAgeJob.jar
    $ spark-submit --class com.msd.FemaleApp --master yarn --deploy-mode client FemaleJob.jar
-   $ bash copy_proccessed_files.sh
+   $ bash copy_processed_files.sh
    ```
 6. You can verify the result by query the hive tables (from inside the sandbox docker)
    ```bash
