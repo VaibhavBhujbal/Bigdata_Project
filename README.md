@@ -35,6 +35,8 @@ Please install docker before you run this script.
    $ scp -P 2222 Ingestion/* root@localhost:~/
    $ scp -P 2222 ETL_Spark/build/* root@localhost:~/
    ```
+   * You will be asked to change the default password (default password: hadoop).
+   
 5. Run the following commands sequentially.
    ```bash
    # Enter sandbox-hdp docker
