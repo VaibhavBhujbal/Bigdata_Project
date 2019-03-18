@@ -32,8 +32,8 @@ Please install docker before you run this script.
    ```
    Command
    ```bash
-   $  scp -P 2222 Ingestion/* root@localhost:~/
-   $  scp -P 2222 ETL_Spark/build/* root@localhost:~/
+   $ scp -P 2222 Ingestion/* root@localhost:~/
+   $ scp -P 2222 ETL_Spark/build/* root@localhost:~/
    ```
 5. Run the following commands sequentially.
    ```bash
