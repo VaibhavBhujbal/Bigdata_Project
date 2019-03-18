@@ -39,7 +39,6 @@ Please install docker before you run this script.
    ```bash
    # Enter sandbox-hdp docker
    $ ssh -p 2222 root@localhost
-   $ sudo yum install nano -y
    $ bash ingestion.sh
    $ hive -f schema.sql
    $ spark-submit --class com.msd.AllAgeApp --master yarn --deploy-mode client AllAgeJob.jar
