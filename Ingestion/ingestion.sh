@@ -10,4 +10,4 @@ wget -O rows.csv "https://chronicdata.cdc.gov/views/735e-byxc/rows.csv?accessTyp
 hdfs dfs -put rows.csv /warehouse/tablespace/managed/hive/msd.db/raw_csv/rows.csv
 rm rows.csv
 
-sudo -u root hdfs dfs -chown -R hive /warehouse/tablespace/managed/hive/msd.db
+sudo -u hdfs hdfs dfs -chown -R hive /warehouse/tablespace/managed/hive/msd.db
