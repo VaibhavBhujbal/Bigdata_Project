@@ -52,9 +52,9 @@ Please install docker before you run this script.
 
    First Output
    ```sql
-   SELECT * FROM msd.yearly_avg_all_age
+   SELECT * FROM msd.yearly_avg_all_age;
    ```
    Second Output
    ```sql
-   SELECT * FROM msd.yearly_avg_female
+   SELECT * FROM msd.yearly_avg_female;
    ```
