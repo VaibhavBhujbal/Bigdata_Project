@@ -1,4 +1,4 @@
-# MSD_BigData_Interview_Project
+# BigData Project
 
 ## Requirements
 This script has been tested on Ubuntu 18.04.
