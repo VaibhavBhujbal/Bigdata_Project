@@ -1,4 +1,4 @@
-# BigData Project
+# Big Data Project
 
 ## Requirements
 This script has been tested on Ubuntu 18.04.
